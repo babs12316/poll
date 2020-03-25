@@ -1,9 +1,9 @@
-.bottomNav{
-    padding:10px;
-    width: 100%;
-    background-color: slategrey;
-    color:#fff;
-    margin-top: 5%;
-    position: fixed;
-    bottom:0px;
+.bottomNav {
+  padding: 10px;
+  width: 100%;
+  background-color: slategrey;
+  color: #fff;
+  margin-top: 5%;
+  position: fixed;
+  bottom: 0px;
 }

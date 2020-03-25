@@ -5,7 +5,7 @@ import QuestionDetail from "./QuestionDetail";
 
 describe("<QuestionDetail />", () => {
   it("renders h2 tag", () => {
-    const wrapper = shallow(<QuestionDetail/>);
+    const wrapper = shallow(<QuestionDetail />);
     expect(wrapper.find("h2")).to.have.lengthOf(1);
   });
   it("renders a table", () => {

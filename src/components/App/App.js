@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
-import QuestionList from '../QuestionList/QuestionList';
+import React from "react";
+import "./App.css";
+import QuestionList from "../QuestionList/QuestionList";
 
 function App() {
   return (
     <div className="App">
-     <QuestionList></QuestionList>
+      <QuestionList></QuestionList>
     </div>
   );
 }
