@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import QuestionList from './components/QuestionList/QuestionList';
+import QuestionList from '../QuestionList/QuestionList';
 
 function App() {
   return (

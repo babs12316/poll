@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from 'react';
 import './QuestionDetail.css';
 const QuestionDetail = (props) => {
-    const[questionDetail,setQuestionDetail]=useState([]);
+  const[questionDetail,setQuestionDetail]=useState([]);
     const[choices,setChoices]=useState([]);
     useEffect(() => {
         async function fetchData() {
@@ -34,5 +34,8 @@ return (
 
 </div>  );
 }
+
+
  
+
 export default QuestionDetail;

@@ -1,7 +1,7 @@
 import React from "react";
 import { expect } from "chai";
 import { shallow } from "enzyme";
-import QuestionList from "./QuestionList";
+import QuestionList from "./QuestionDetail";
 
 describe("<QuestionList />", () => {
   it("renders h2 tag", () => {
