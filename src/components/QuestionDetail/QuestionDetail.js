@@ -1,0 +1,40 @@
+import React,{useEffect,useState} from 'react';
+import './QuestionDetail.css';
+const QuestionDetail = (props) => {
+    const { params } = props.match
+    const[questionDetail,setQuestionDetail]=useState([]);
+    const[choices,setChoices]=useState([]);
+    useEffect(() => {
+        async function fetchData() {
+          const res = await fetch("http://polls.apiblueprint.org/questions/"+params.id);
+          const data = await res.json();
+          console.log("data is"+ JSON.stringify(data));
+          setQuestionDetail(data);
+          setChoices(data.choices);
+     }
+      fetchData();
+      // eslint-disable-next-line 
+      }, []); // passed empty array so that data is fetched only once
+ 
+
+
+return (
+<div className="row container-fluid">
+    <h2 className="col-md-12">Questions Detail</h2>
+    <div className="col-md-12 headline">Question: <b> {questionDetail.question}</b></div>
+    <table className="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">Choice</th>
+      <th scope="col">Votes</th>
+      </tr>
+    </thead>
+    <tbody>
+     {choices.map((choice,index)=><tr key={index}><td>{choice.choice}</td><td>{choice.votes}</td></tr>)}
+    </tbody>
+    </table>
+
+</div>  );
+}
+ 
+export default QuestionDetail;
