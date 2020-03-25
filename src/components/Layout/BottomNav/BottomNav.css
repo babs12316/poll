@@ -4,4 +4,6 @@
     background-color: slategrey;
     color:#fff;
     margin-top: 5%;
+    position: fixed;
+    bottom:0px;
 }
